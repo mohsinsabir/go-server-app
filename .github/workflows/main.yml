@@ -42,10 +42,10 @@ jobs:
         with:
           host: ${{ secrets.AZURE_VM_HOST }}
           # host: 74.249.119.135
-          username: ${{ secrets.AZURE_VM_USER }}
-          # password: ${{ secrets.AZURE_VM_PASSWORD }}
+          username: ${{ secrets.AZURE_VM_USERNAME }}
+          password: ${{ secrets.AZURE_VM_PASSWORD }}
           # username: mohsin
-          password: Momo@1234567
+          # password: Momo@1234567
           port: 22
           script: |
             docker pull mohsin6/go-server-app:latest
