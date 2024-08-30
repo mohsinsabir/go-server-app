@@ -42,9 +42,9 @@ jobs:
         with:
           host: ${{ secrets.AZURE_VM_HOST }}
           # host: 74.249.119.135
-          # username: ${{ secrets.AZURE_VM_USER }}
+          username: ${{ secrets.AZURE_VM_USER }}
           # password: ${{ secrets.AZURE_VM_PASSWORD }}
-          username: mohsin
+          # username: mohsin
           password: Momo@1234567
           port: 22
           script: |
