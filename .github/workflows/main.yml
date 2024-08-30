@@ -40,9 +40,12 @@ jobs:
       - name: Deploy to Azure VM
         uses: appleboy/ssh-action@v0.1.3
         with:
-          host: ${{ secrets.AZURE_VM_HOST }}
-          username: ${{ secrets.AZURE_VM_USER }}
-          password: ${{ secrets.AZURE_VM_PASSWORD }}
+          # host: ${{ secrets.AZURE_VM_HOST }}
+          host: 74.249.119.135
+          # username: ${{ secrets.AZURE_VM_USER }}
+          # password: ${{ secrets.AZURE_VM_PASSWORD }}
+          username: mohsin
+          password: Momo@1234567
           port: 22
           script: |
             docker pull mohsin6/go-server-app:latest
